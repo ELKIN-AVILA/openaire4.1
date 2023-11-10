@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5.8. Date (Fecha asociadas) (M) &mdash; Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023 1.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://hypothes.is/embed.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index2.html" class="icon icon-home">
+            Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023
+          </a>
+              <div class="version">
+                4.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference external" href="https://redcol.minciencias.gov.co/vufind/Content/directrices">Directrices para repositorios institucionales de investigación v1:</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index2.html">Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index2.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">5.8. Date (Fecha asociadas) (M)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/field_embargoenddate.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="date-fecha-asociadas-m">
+<span id="dci-dateembargo"></span><h1>5.8. Date (Fecha asociadas) (M)<a class="headerlink" href="#date-fecha-asociadas-m" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">datacite:date</span></code></p>
+<div class="section" id="definicion-y-alcance-del-campo">
+<h2>5.8.1. Definición y alcance del campo<a class="headerlink" href="#definicion-y-alcance-del-campo" title="Permalink to this headline">¶</a></h2>
+<p>Este campo contiene un grupo de fechas asociadas a la creación, edición, publicación, embargo y acceso al recurso de información (Fechas asociada al evento durante todo el ciclo de vida del recurso).</p>
+<p>Normalmente, la fecha estará asociada con la disponibilidad del recurso. La mejor práctica es codificar el valor de la fecha con el perfil que define <a class="reference external" href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> [W3CDTF] con formato AAAA-MM-DD.</p>
+<p>En caso de recursos de información que se encuentren bajo período de embargo,  se deben registrar la fecha de disponibilidad del mismo con el compromiso de proporcionar acceso al documento completo a partir del momento de su liberación  (para productos de información que aplique).</p>
+</div>
+<div class="section" id="niveles-de-persistencia-m-ma-r-o">
+<h2>5.8.2. Niveles de persistencia (M/MA/R/O)<a class="headerlink" href="#niveles-de-persistencia-m-ma-r-o" title="Permalink to this headline">¶</a></h2>
+<p>Obligatorio (M) para fechas de publicación.</p>
+<p>Obligatorio cuando sea aplicable (MA) cuando existan periodos de embargo ó restricciones de acceso.</p>
+<p>Opcional (O) otro tipo de  fechas cuando se encuentren presentes en el recurso de información.</p>
+</div>
+<div class="section" id="niveles-de-ocurrencia-r-nr">
+<h2>5.8.3. Niveles de ocurrencia (R / NR)<a class="headerlink" href="#niveles-de-ocurrencia-r-nr" title="Permalink to this headline">¶</a></h2>
+<p>Para fechas de publicación: No Repetible (R): <strong>1 ocurrencia</strong></p>
+<p>Para periodos de embargo: No Repetible (R): <strong>2 ocurrencias</strong> (Fechas de inicio y finalización del embargo)</p>
+</div>
+<div class="section" id="esquema-de-metadatos">
+<h2>5.8.4. Esquema de metadatos<a class="headerlink" href="#esquema-de-metadatos" title="Permalink to this headline">¶</a></h2>
+<p>datacite:date</p>
+<p><strong>Nota:</strong> Este campo se ha adaptado del esquema de metadatos DATACITE MetadataKernel versión 4.1 (<a class="reference external" href="http://doi.org/10.5438/0014">http://doi.org/10.5438/0014</a>), el cual es utilizado ampliamente para la gestión de documentos y datos.</p>
+</div>
+<div class="section" id="traduccion-al-espanol">
+<h2>5.8.5. Traducción al español<a class="headerlink" href="#traduccion-al-espanol" title="Permalink to this headline">¶</a></h2>
+<p>Fechas Asociadas:</p>
+<ul class="simple">
+<li>Fecha de publicación</li>
+<li>Fecha de Disponibilidad/Acceso</li>
+<li>Fecha de Aceptación</li>
+</ul>
+</div>
+<div class="section" id="forma-de-descripcion-normalizada-rda-rcaa2-isbd">
+<h2>5.8.6. Forma de Descripción Normalizada (RDA / RCAA2/ ISBD)<a class="headerlink" href="#forma-de-descripcion-normalizada-rda-rcaa2-isbd" title="Permalink to this headline">¶</a></h2>
+<p>RDA (Recursos: descripción y acceso)</p>
+<p>Revise la forma adecuada para ingresar la fecha en la forma estipulada:</p>
+<blockquote>
+<div><ul>
+<li><p class="first"><strong>Fecha de publicación completa:</strong>  Información relacionada con la publicación, impresión, distribución, emisión y puesta en circulación del recurso. Debe ingresarse con las reglas de codificación de la W3C / <a class="reference external" href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> para fechas y horas (AAAA-MM-DD) (por ejemplo: 1997-07-16)</p>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>Notas:</strong></dt>
+<dd><ul class="first last simple">
+<li>AAAA [año de cuatro dígitos] deber ser  <strong>Obligatorio</strong>.</li>
+<li>MM [el mes de dos dígitos (01 = enero, 02 = febrero, 03 = marzo, etc.)] es <strong>Opcional</strong>.</li>
+<li>DD [el día del mes de dos dígitos (01 a 31)] es <strong>Opcional</strong>.</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Campo de fecha - Fecha de publicación:</strong> Normalmente, los sistemas de repositorio tienen más de un campo de fecha que sirve para diferentes propósitos. Por ejemplo: Fecha de creación, publicación, modificación, promoción, emisión, etc. Preferiblemente, en la perspectiva de los usuarios finales, la fecha más lógica y significativa será la fecha de publicación (dc.date.issued). <strong>YYYY-MM-DD</strong> (Por ejemplo: 2015-05-15)</p>
+</li>
+<li><p class="first"><strong>Fecha de publicación no disponible o no identificada:</strong> Si no hay una fecha de publicación disponible o identificada, use cualquier otra fecha disponible o una aproximación a la fecha de publicación del recurso según su contenido. No colocar fechas que incluyan signos ó símbolos (Por ejemplo: 200?, 19??). No es adecuado dejar el campo sin ninguna fecha ya que para efectos de recuperación es un campo clave que aproxima la cantidad de recursos por periodos de tiempo. Cabe resaltar que en el caso que no se tenga la fecha exacta, no hay necesidad de colocar el mes ni el día, tan solo con el año el recurso no se verá afectado. YYYY (por ejemplo: 2018)</p>
+</li>
+<li><p class="first"><strong>Adiciones de marca de datos:</strong> En ocasiones, existen fechas difusas o borrosas en los recursos, se recomienda no dejar el campo de fecha de publicación en blanco (acerque el periodo de fecha del recurso en vez de utilizar una periodo cronológico) y en simultaneo utilizar cicho periodo cronológico (Por Ejemplo: “Siglo XX” - “17th century”) para expresar éste periodo temporal en el campo (<strong>dc:coverage</strong>).</p>
+</li>
+</ul>
+<p><strong>Nota:</strong> Dado que no hay un estándar para fechas difusas o no identificadas para periodos cronológicos o términos como “Renacimiento” o “Siglo XVII”, simplemente estos resultados no aparecerán en las consultas realizadas en el campo de fecha.</p>
+</div></blockquote>
+</div>
+<div class="section" id="propiedades-atributos-y-especificadores-de-campo">
+<h2>5.8.7. Propiedades, atributos y especificadores de campo<a class="headerlink" href="#propiedades-atributos-y-especificadores-de-campo" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="clase-principal-fechas-dates-m-1">
+<h3>5.8.7.1. Clase Principal Fechas (dates) (M, 1):<a class="headerlink" href="#clase-principal-fechas-dates-m-1" title="Permalink to this headline">¶</a></h3>
+<p>Entidad que agrupa todas las fechas relacionadas con el recurso durante su ciclo de vida.</p>
+<blockquote>
+<div><ul>
+<li><p class="first"><strong>Sub-Propiedad: Fecha (date) (M, 1-n):</strong> Entidad que identifica cada uno de las fechas relacionadas con el recurso durante su ciclo de vida.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Atributo: Tipo de Fecha (dateType) (M, 1):</strong>  En el tipo de fecha elija del vocabulario de <strong>tipo de fecha</strong> y utilice el término controlado para indicar el tipo de fecha asociado al recurso según el vocabulario propuesto:</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="6%" />
+<col width="88%" />
+<col width="6%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Vocabulario Normalizado</th>
+<th class="head">Descripción del Atributo</th>
+<th class="head">Dominio de Vocabulario</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Accepted</td>
+<td>Fecha en la cual fue aceptado el recurso de información y es incluido en el sistema de información. No confundir con la fecha que fue recibido el recurso. En el ámbito que haya embargo (restricción de acceso), este atributo indica la fecha de inicio de la restricción.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Available</td>
+<td>Fecha en la cual está disponible el recurso de información para consulta/acceso público. Generalmente está asociado con la fecha de publicación del recurso en el sistema de información cuando no se haya hecho una publicación previa. En el ámbito que haya embargo (restricción de acceso), este atributo indica la fecha de finalización de la restricción.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>Copyrighted</td>
+<td>La fecha específica y documentada en la que el recurso recibe un estado con derechos de autor, si corresponde.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Collected</td>
+<td>La fecha o rango de fechas en que se recolectó/cosechó el contenido del recurso. Aplica para recursos de información recolectado/cosechado por agregadores OAI-PMH.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>Created</td>
+<td>Fecha de creación o fabricación del contenido intelectual si es diferente de la fecha.de publicación.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Issued</td>
+<td>Fecha de publicación del recurso de información. Generalmente está asociado con la fecha de disponibilidad del recurso en el sistema de información cuando no se haya hecho una publicación previa del mismo.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>Submitted</td>
+<td>Fecha el la cual fue enviado el recurso al sistema de información y es recibido formalmente para inicio de su gestión (Workflow) si aplica.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Updated</td>
+<td>La última vez que se actualizó ó modificó el recurso de información a través de cualquiera de las interfaces ofrecidas por el sistema de información</td>
+<td>redcol</td>
+</tr>
+<tr class="row-even"><td>Valid</td>
+<td>La fecha o el intervalo de fechas durante el cual el conjunto de datos o el recurso es válido para su uso.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Withdrawn</td>
+<td>La fecha en que se elimina el recurso.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>Other</td>
+<td>Otro tipo de fechas no especificadas en el vocabulario</td>
+<td>datacite</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="relaciones-con-otros-campos">
+<h2>5.8.8. Relaciones con otros campos<a class="headerlink" href="#relaciones-con-otros-campos" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>No debe confundirse la fecha de embargo del recurso de información <strong>Embargo Period Date (datacite:date)</strong> con la fecha de publicación del recurso <strong>Publication Date (dc.date.issued)</strong> incluidos sus especificadores de campo.</li>
+<li>No debe confundirse la fecha de creación del recurso (<strong>dc.date.created</strong>) con la fecha de publicación del mismo <strong>Publication Date (dc.date.issued)</strong>.</li>
+<li>No debe confundirse la fecha de disponibilidad del recurso en accceso completo (Full-Text Access  <strong>dc.date.available</strong>) en el repositorio con la fecha de publicación del mismo <strong>Publication Date (dc.date.issued)</strong>.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="restricciones">
+<h2>5.8.9. Restricciones<a class="headerlink" href="#restricciones" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Si no hay ninguna fecha de publicación disponible, se recomienda utilizar una fecha estimada. Dado que es mejor utilizar una fecha estimada que ninguna, se pueden utilizar la fecha de impresión, la de aceptación del trabajo, la fecha en que se coloca disponible el recurso para descarga/consulta, etc.</li>
+<li>En el ámbito que haya embargo (restricción de acceso), se recomienda especificar las dos fechas (<strong>Accepted, Available</strong>) con sus respectivos atributos que indican inicio y fin de la restricción.</li>
+<li>Cuando el campo asociado a los derechos de acceso (M) se establezca con el valor provisto por COAR <strong>embargoed access</strong> / &lt;<a class="reference external" href="http://purl.org/coar/access_right/c_f1cf">http://purl.org/coar/access_right/c_f1cf</a>&gt;. Es obligatorio la inclusión de la fecha de inicio y finalización del período de embargo.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="ejemplos-y-ayudas">
+<h2>5.8.10. Ejemplos y ayudas<a class="headerlink" href="#ejemplos-y-ayudas" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ayudas">
+<h3>5.8.10.1. Ayudas<a class="headerlink" href="#ayudas" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Fecha de publicación:</strong>   datacite:date  dataType= “Issued”     - 2019-03-20</li>
+<li><strong>Fecha de aceptación:</strong>     datacite:date  dataType=“Accepted”   - 2019-02-01</li>
+<li><strong>Fecha de disponibilidad:</strong> datacite:date  dataType=“Available”  - 2010-04-25</li>
+<li><strong>Fecha de creación:</strong>       datacite:date  dataType=“Created”    - 1977-07-11</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="ejemplo-en-xml-interoperabilidad-oai-pmh">
+<h3>5.8.10.2. Ejemplo en XML (Interoperabilidad OAI-PMH)<a class="headerlink" href="#ejemplo-en-xml-interoperabilidad-oai-pmh" title="Permalink to this headline">¶</a></h3>
+<p><strong>Esquema oai_dc</strong></p>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="nt">&lt;dc:date&gt;</span>2017-02-10T22:11:00Z<span class="nt">&lt;/dc:date&gt;</span>
+     <span class="nt">&lt;dc:date&gt;</span>2017-02-10T22:11:00Z<span class="nt">&lt;/dc:date&gt;</span>
+     <span class="nt">&lt;dc:date&gt;</span>2017<span class="nt">&lt;/dc:date&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Esquema DataCite</strong></p>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="nt">&lt;datacite:dates&gt;</span>
+             <span class="nt">&lt;datacite:date</span> <span class="na">dateType=</span><span class="s">&quot;Accepted&quot;</span><span class="nt">&gt;</span>2011-12-01<span class="nt">&lt;/datacite:date&gt;</span>
+             <span class="nt">&lt;datacite:date</span> <span class="na">dateType=</span><span class="s">&quot;Available&quot;</span><span class="nt">&gt;</span>2012-12-01<span class="nt">&lt;/datacite:date&gt;</span>
+             <span class="nt">&lt;datacite:date</span> <span class="na">dateType=</span><span class="s">&quot;Issued&quot;</span><span class="nt">&gt;</span>2010-12-25<span class="nt">&lt;/datacite:date&gt;</span>
+     <span class="nt">&lt;/datacite:dates&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Esquema xoai</strong></p>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;date&quot;</span><span class="nt">&gt;</span>
+             <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;accessioned&quot;</span><span class="nt">&gt;</span>
+                     <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;none&quot;</span><span class="nt">&gt;</span>
+                             <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;value&quot;</span><span class="nt">&gt;</span>2017-02-10T22:11:00Z<span class="nt">&lt;/field&gt;</span>
+                     <span class="nt">&lt;/element&gt;</span>
+             <span class="nt">&lt;/element&gt;</span>
+             <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;available&quot;</span><span class="nt">&gt;</span>
+                     <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;none&quot;</span><span class="nt">&gt;</span>
+                             <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;value&quot;</span><span class="nt">&gt;</span>2017-02-10T22:11:00Z<span class="nt">&lt;/field&gt;</span>
+                     <span class="nt">&lt;/element&gt;</span>
+             <span class="nt">&lt;/element&gt;</span>
+             <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;issued&quot;</span><span class="nt">&gt;</span>
+                     <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;none&quot;</span><span class="nt">&gt;</span>
+                             <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;value&quot;</span><span class="nt">&gt;</span>2017<span class="nt">&lt;/field&gt;</span>
+                     <span class="nt">&lt;/element&gt;</span>
+             <span class="nt">&lt;/element&gt;</span>
+     <span class="nt">&lt;/element&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Esquema dim</strong></p>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="nt">&lt;dim:field</span> <span class="na">mdschema=</span><span class="s">&quot;dc&quot;</span> <span class="na">element=</span><span class="s">&quot;date&quot;</span> <span class="na">qualifier=</span><span class="s">&quot;accessioned&quot;</span><span class="nt">&gt;</span>2017-02-10T22:11:00Z<span class="nt">&lt;/dim:field&gt;</span>
+     <span class="nt">&lt;dim:field</span> <span class="na">mdschema=</span><span class="s">&quot;dc&quot;</span> <span class="na">element=</span><span class="s">&quot;date&quot;</span> <span class="na">qualifier=</span><span class="s">&quot;available&quot;</span><span class="nt">&gt;</span>2017-02-10T22:11:00Z<span class="nt">&lt;/dim:field&gt;</span>
+     <span class="nt">&lt;dim:field</span> <span class="na">mdschema=</span><span class="s">&quot;dc&quot;</span> <span class="na">element=</span><span class="s">&quot;date&quot;</span> <span class="na">qualifier=</span><span class="s">&quot;issued&quot;</span><span class="nt">&gt;</span>2017<span class="nt">&lt;/dim:field&gt;</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="niveles-de-aplicacion-para-productos-de-investigacion-de-minciencias">
+<h2>5.8.11. Niveles de aplicación para  productos de investigación de MinCiencias<a class="headerlink" href="#niveles-de-aplicacion-para-productos-de-investigacion-de-minciencias" title="Permalink to this headline">¶</a></h2>
+<p>Se aplica a todos los productos de MinCiencias.</p>
+</div>
+<div class="section" id="relaciones-con-otros-modelos-de-metadatos">
+<h2>5.8.12. Relaciones con otros modelos de metadatos<a class="headerlink" href="#relaciones-con-otros-modelos-de-metadatos" title="Permalink to this headline">¶</a></h2>
+<p>El campo Fecha de publicación <strong>(datacite:date)</strong> es utilizado por los siguientes esquemas de metadatos y puede intercambiarse su uso de manera indistinta mientras se conserven sus distintos niveles de atributos y especificadores de campo:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Esquema de Metadatos</th>
+<th class="head">Campo Relacionado</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>dc</td>
+<td><ul class="first last simple">
+<li>dc.date</li>
+<li>dc.date.issued</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>dcterms</td>
+<td>dcterms.date</td>
+</tr>
+<tr class="row-even"><td>lom</td>
+<td>lom.meta-metadatos.date</td>
+</tr>
+<tr class="row-odd"><td>marcxml</td>
+<td>field:008 (00-05,06,07-10,11-14) 046, 260, 264</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="niveles-semanticos">
+<h2>5.8.13. Niveles semánticos<a class="headerlink" href="#niveles-semanticos" title="Permalink to this headline">¶</a></h2>
+<p>No aplica.</p>
+</div>
+<div class="section" id="recomendacion-de-campos-de-aplicacion-en-dspace">
+<h2>5.8.14. Recomendación de campos de aplicación en DSPACE<a class="headerlink" href="#recomendacion-de-campos-de-aplicacion-en-dspace" title="Permalink to this headline">¶</a></h2>
+<p>Se recomienda crear/modificar el componente de registro de metadatos (y sus correspondientes hojas de entrada de datos) de los sistemas <strong>DSPACE</strong> basados en los siguientes elementos:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="13%" />
+<col width="9%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Vocabulario controlado OpenAire/RedCol</th>
+<th class="head">Campo Elemento DSPACE</th>
+<th class="head">Calificadores</th>
+<th class="head">Nota de alcance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Fecha de publicación</td>
+<td>dc.date</td>
+<td>issued</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Fecha de disponibilidad</td>
+<td>dc.date</td>
+<td>available</td>
+<td>Utilice este campo para registrar la fecha de finalización de embargo</td>
+</tr>
+<tr class="row-even"><td>Fecha de aceptación</td>
+<td>dc.date</td>
+<td>accepted</td>
+<td>Para indicar el inicio de un período de embargo, utilice Enviado o Aceptado, según corresponda.</td>
+</tr>
+<tr class="row-odd"><td>Fecha de envío</td>
+<td>dc.date</td>
+<td>submitted</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Fecha de creación</td>
+<td>dc.date</td>
+<td>created</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Fecha de Recolección</td>
+<td>dc.date</td>
+<td>collected</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Fecha de actualización</td>
+<td>dc.date</td>
+<td>updated</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Fecha de validez</td>
+<td>dc.date</td>
+<td>valid</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Fecha de descarte</td>
+<td>dc.date</td>
+<td>withdrawn</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Otras fechas relacionadas</td>
+<td>dc.date</td>
+<td>other</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="recomendaciones-de-migracion-de-otras-directrices-de-metadatos-bdcol-snaac-la-referencia-openaire-2-openaire-3">
+<h2>5.8.15. Recomendaciones de migración de otras directrices de metadatos (BDCOL, SNAAC, LA REFERENCIA, OPENAIRE 2, OPENAIRE 3)<a class="headerlink" href="#recomendaciones-de-migracion-de-otras-directrices-de-metadatos-bdcol-snaac-la-referencia-openaire-2-openaire-3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Se recomienda específicamente crear los nuevos atributos/especificadores del campo de fecha según la codificación propuesta.</li>
+<li>En versiones previas de otras directrices se utilizaba es esquema <a class="reference external" href="info:eu-repo/date/EmbargoEnd/[YYYY-MM-DD">info:eu-repo/date/EmbargoEnd/[YYYY-MM-DD</a>] el cual debe ser sustituido por el uso de las nuevas propiedades y atributos.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright MinCiencias 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

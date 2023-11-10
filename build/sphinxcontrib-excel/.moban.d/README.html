@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Setup &mdash; Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023 1.1 documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/my_theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://hypothes.is/embed.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index2.html" class="icon icon-home">
+            Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023
+          </a>
+              <div class="version">
+                4.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference external" href="https://redcol.minciencias.gov.co/vufind/Content/directrices">Directrices para repositorios institucionales de investigación v1:</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index2.html">Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index2.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Setup</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/sphinxcontrib-excel/.moban.d/README.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>{% extends “BASIC-README.rst.jj2” %}</p>
+<p>{%block documentation_link%}
+{%endblock%}</p>
+<p>{%block constraint%}
+{%endblock%}</p>
+<p>{%block features %}
+<strong>{{name}}</strong> uses pyexcel to read an excel files and renders into an excel-alike sheet in your sphinx documentation. The excel file formats are:</p>
+<ol class="arabic simple">
+<li>csv</li>
+<li>tsv</li>
+<li>csvz</li>
+<li>tsvz</li>
+<li>xls</li>
+<li>xlsx</li>
+<li>xlsm</li>
+<li>ods</li>
+</ol>
+<p>{%endblock%}</p>
+<p>{%block usage%}</p>
+<div class="section" id="setup">
+<h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
+<p>Please add sphinxcontrib-excel into your conf.py file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="o">...</span>
+        <span class="s1">&#39;sphinxcontrib.excel&#39;</span><span class="p">,</span>
+        <span class="o">...</span>
+    <span class="p">]</span>
+</pre></div>
+</div>
+<p>And you will need to copy a few resources file to your sphinx source directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">resources</span><span class="o">/</span><span class="n">_template</span><span class="o">/</span><span class="n">layout</span><span class="o">.</span><span class="n">html</span>
+<span class="n">resources</span><span class="o">/</span><span class="n">_static</span><span class="o">/</span><span class="n">handsontable</span><span class="o">.</span><span class="n">full</span><span class="o">.</span><span class="n">min</span><span class="o">.</span><span class="n">js</span>
+<span class="n">resources</span><span class="o">/</span><span class="n">_static</span><span class="o">/</span><span class="n">handsontable</span><span class="o">.</span><span class="n">full</span><span class="o">.</span><span class="n">min</span><span class="o">.</span><span class="n">css</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><cite>resources</cite> directory is in github. please check it out.</p>
+</div>
+<p>Here is the syntax to present your excel file in sphinx documentation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">pyexcel</span><span class="o">-</span><span class="n">table</span><span class="p">::</span> <span class="n">filename</span><span class="o">.</span><span class="n">csv</span>
+</pre></div>
+</div>
+<p>And ‘filename.csv’ is expected in the directory where the referring rst file is.
+Relative path needs to be given if your file is somewhere else.</p>
+<p>For example, the following rst statment:</p>
+<img alt="table directive" src="https://github.com/pyexcel/sphinxcontrib-excel/raw/master/sphinx-doc-source.png" />
+<p>is translated as:</p>
+<img alt="table view" src="https://github.com/pyexcel/sphinxcontrib-excel/raw/master/sphinx-doc-view.png" />
+<div class="section" id="embed-csv-into-your-sphinx-documentation">
+<h2>Embed csv into your sphinx documentation<a class="headerlink" href="#embed-csv-into-your-sphinx-documentation" title="Permalink to this headline">¶</a></h2>
+<p>Here is the syntax for embedded csv, <a class="reference external" href="http://pyexcel.readthedocs.io/en/latest/#usage">rendering as a single handsontable</a>:</p>
+<p>Here is the complex example for embedded csv, which will be <a class="reference external" href="http://pyexcel.readthedocs.io/en/latest/tutorial_data_conversion.html#how-to-obtain-a-dictionary-from-a-multiple-sheet-book">rendered as
+multi-tab handsontable</a>):</p>
+<p>{%endblock%}</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright MinCiencias 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

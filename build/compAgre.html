@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.3. Compatibilidad con otros recolectores de metadatos &mdash; Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023 1.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://hypothes.is/embed.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index2.html" class="icon icon-home">
+            Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023
+          </a>
+              <div class="version">
+                4.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference external" href="https://redcol.minciencias.gov.co/vufind/Content/directrices">Directrices para repositorios institucionales de investigación v1:</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index2.html">Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index2.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">4.3. Compatibilidad con otros recolectores de metadatos</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/compAgre.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="compatibilidad-con-otros-recolectores-de-metadatos">
+<span id="compagre"></span><h1>4.3. Compatibilidad con otros recolectores de metadatos<a class="headerlink" href="#compatibilidad-con-otros-recolectores-de-metadatos" title="Permalink to this headline">¶</a></h1>
+<p>La Red Colombiana de Información Científica (RedCol) recolectará los metadatos de los distintos sistemas de información que posean las instituciones miembro (Repositorios / Bibliotecas Digitales, Sistema de Publicación, Sistemas de Investigación) que cumplan las directrices propuestas y provean los protocolos de interoperabilidad requeridos (OAI-PMH).</p>
+<p>Adicionalmente, las instituciones miembro podrán optar por suministrar únicamente los datos de acceso de un sistema del tipo Integrador/Recolector/Agregador institucional que también sea compatible con estas directrices. Para este caso, es importante conocer la procedencia de los proveedores de contenido original que serán recolectados por los el sistema de información y que deben ser codificados por RedCol, siguiendo las <a class="reference external" href="http://www.openarchives.org/OAI/2.0/guidelines-provenance.htm">políticas</a> de OAI-PMH para la interoperabilidad (Utilizando el campo <strong>“provenance”</strong> en los metadatos recolectados).</p>
+<p>NOTA: No confundir el campo dc.description.provenance que viene incluido dentro del registro de metadatos con el campo OAI:provenance que se indica como un complemente del campo <strong>“record”,</strong> el cual es independiente el modelo de metadatos utilizado durante la cosecha a través el protocolo OAI-PMH  del repositorio/biblioteca digital.</p>
+<p>A continuación, se muestra un ejemplo de las etiquetas XML que deben venir acompañando a cada registro de metadatos que se recolecta a través de un sistema intermediario para su codificación:</p>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nt">&lt;record&gt;</span>
+<span class="nt">&lt;header&gt;</span> … <span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;metadata&gt;</span> … <span class="nt">&lt;/metadata&gt;</span>
+
+<span class="nt">&lt;about&gt;</span>
+<span class="nt">&lt;provenance</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.openarchives.org/OAI/2.0/provenance&quot;</span>
+<span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+<span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://www.openarchives.org/OAI/2.0/provenance</span>
+<span class="s">http://www.openarchives.org/OAI/2.0/provenance.xsd&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;originDescription</span> <span class="na">altered=</span><span class="s">&quot;true&quot;</span> <span class="na">harvestDate=</span><span class="s">&quot;2012-09-17T14:58:36Z&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;baseURL&gt;</span>https://repositorio.MinCiencias.gov.co/oai/request<span class="nt">&lt;/baseURL&gt;</span>
+    <span class="nt">&lt;identifier&gt;</span>oai:repositorio.MinCiencias.gov.co:1874/218065<span class="nt">&lt;/identifier&gt;</span>
+    <span class="nt">&lt;datestamp&gt;</span>2012-01-19T12:38:56Z<span class="nt">&lt;/datestamp&gt;</span>
+    <span class="nt">&lt;metadataNamespace&gt;</span>
+      http://www.openarchives.org/OAI/2.0/oai_dc/
+    <span class="nt">&lt;/metadataNamespace&gt;</span>
+  <span class="nt">&lt;/originDescription&gt;</span>
+<span class="nt">&lt;/provenance&gt;</span>
+<span class="nt">&lt;/about&gt;</span>
+<span class="nt">&lt;/record&gt;</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright MinCiencias 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

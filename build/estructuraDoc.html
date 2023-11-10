@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.4. Estructura del Perfil de Aplicación REDCOL (Campos de Metadatos) &mdash; Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023 1.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://hypothes.is/embed.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index2.html" class="icon icon-home">
+            Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023
+          </a>
+              <div class="version">
+                4.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference external" href="https://redcol.minciencias.gov.co/vufind/Content/directrices">Directrices para repositorios institucionales de investigación v1:</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index2.html">Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index2.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">4.4. Estructura del Perfil de Aplicación REDCOL (Campos de Metadatos)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/estructuraDoc.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="estructura-del-perfil-de-aplicacion-redcol-campos-de-metadatos">
+<span id="estructuradoc"></span><h1>4.4. Estructura del Perfil de Aplicación REDCOL (Campos de Metadatos)<a class="headerlink" href="#estructura-del-perfil-de-aplicacion-redcol-campos-de-metadatos" title="Permalink to this headline">¶</a></h1>
+<p>Este esquema de aplicación proporciona una descripción detallada del conjunto de campos de metadatos normalizados y adaptados para describir los distintos productos de información científica reconocidos por MinCiencias. En este apartado se tuvieron en cuenta los aspectos  e interoperabilidad (sintácticos, semánticos y estructurales) y su forma de aplicación en los sistemas de información más utilizados en la actualidad.</p>
+<p>Para el análisis de cada uno de los campo de metadatos que son utilizados por este conjunto de directrices para productos de información científica, se tuvo en cuenta los siguientes componentes de evaluación:</p>
+<blockquote>
+<div><ul>
+<li><p class="first"><strong>Definición y alcance del campo (X.1):</strong> Se exponen con precisión los conceptos de los campo y se determina de forma clara y sencilla los objetivos que se quieren alcanzar en cada uno.</p>
+</li>
+<li><p class="first"><strong>Cardinalidad de Metadatos:</strong> Se especifican propiedades de presencia y ocurrencia de cada campo de metadatos</p>
+</li>
+<li><p class="first"><strong>Niveles de persistencia (X.2):</strong> Son las propiedades de existencia de los metadatos definidas así:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Obligatorio = Mandatory (M):</strong> La propiedad siempre debe estar presente en los metadatos. No se permite un valor vacío para la propiedad.</li>
+<li><strong>Obligatorio si es aplicable = Mandatory if Applicable (MA):</strong> Cuando se puede obtener el valor de la propiedad, debe estar presente en los metadatos.</li>
+<li><strong>Recomendado = Recommended (R):</strong> Aunque su uso no es obligatorio, Se recomienda el uso de la propiedad.</li>
+<li><strong>Opcional = Optional (O):</strong> No es importante si la propiedad se usa o no, pero si se usa puede proporcionar información complementaria sobre el recurso.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Niveles de ocurrencia (X.3):</strong> Se especifica la repetibilidad o  no repetibilidad de cada campo según su naturaleza.</dt>
+<dd><ul class="first last simple">
+<li><strong>Repetible (R):</strong> El campo de metadatos puede utilizarse 1 o más veces (1-n)</li>
+<li><strong>No repetible (NR):</strong> El campo de metadatos debe utilizarse solamente una vez. (1)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first"><strong>Esquema (Modelo) de metadatos (X.4):</strong> Determina el modelo de metadatos aplicado para la definición y utilización del campo. Estas directrices contemplan la utilización de los siguientes modelos de metadatos:</p>
+</li>
+</ul>
+</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="74%" />
+<col width="26%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Modelo de Metadatos</th>
+<th class="head">Codificación REDCOL</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Simple DC XML Schema</td>
+<td>dc</td>
+</tr>
+<tr class="row-odd"><td>DCMI Metadata Terms Schema</td>
+<td>dcterms</td>
+</tr>
+<tr class="row-even"><td>Learning Object Metadata Schema definition (LOM)</td>
+<td>lom</td>
+</tr>
+<tr class="row-odd"><td>Electronic Theses and Dissertation Metadata Schema (ETD-MS)</td>
+<td>thesis</td>
+</tr>
+<tr class="row-even"><td>DataCite Metadata Schema</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>OpenAire Specification Schema</td>
+<td>oaire</td>
+</tr>
+<tr class="row-even"><td>Red Colombiana de Información Científica</td>
+<td>redcol</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Traducción al español (X.5):</strong> Nombre del campo de metadato en idioma español.</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Forma de descripción normalizada (X.6):</strong> Aquí se indica la forma correcta de la descripción del campo según la normatividad internacional aplicada. Ejemplo: RDA (Recursos : descripción y acceso) - RCAA2 (Reglas de Catalogación Angloamericanas 2).</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Propiedades, atributos y especificadores de campo (X.7):</strong>  Este apartado muestra las diversos formas de representar los campos a partir de su especificidad y sus características sintácticas.</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Relaciones con otros campos (X.81):</strong> Aquí se describen otros campos relacionados con el tipo de contenido referenciado al describir el recurso</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Restricciones (X.9):</strong> Información que no debe utilizarse en el campo.</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Ejemplos y ayudas (X.10):</strong> Se describen ejemplos de la forma correcta para la descripción del campo, adicionalmente se muestran ayudas de despliegue de los archivos XML durante transacciones interoperabilidad (Protocolo OAI-PMH)</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Niveles de aplicación para productos de investigación de MinCiencias (X.11):</strong> Se especifican recomendaciones de uso del campo de metadatos enfocado a los distintos que producto de investigación reconocidos por MinCiencias (Tipologías Documentales).</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Relaciones con otros modelos de metadatos (X.12):</strong> Se relacionan otros esquemas (Modelos) de metadatos que apliquen.</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Niveles semánticos (X.13):</strong> Permiten asignar significado a la información sobre los atributos, lenguajes controlados, vocabularios controlados y/o términos extraídos de tesauros que se apliquen al campo.</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Recomendación de campos de aplicación en DSPACE (X.14):</strong> Se ofrece una recomendación general de normalización de esquemas de registro de metadatos, Campos/Elementos, Calificadores/Especificadores y Notas de alcance que deben ser configuradas en DSPACE con el fin de obtener campos normalizados en el despliegue y durante el proceso de cosecha (protocolo OAI-PMH) utilizando los distintos modelos de metadatos ofrecidos por DSPACE (uketd_dc, qdc, didl, mods, mets, ore, rdf, marc, oai_dc, xoai, dim, etdms, etc.) que permiten maximizar los procesos de validación sintáctica, semántica y estructural.</li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/dspace.png"><img alt="_images/dspace.png" src="_images/dspace.png" style="width: 939.2px; height: 435.2px;" /></a>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Recomendaciones de migración de otras directrices de metadatos (X.15):</strong> Información que se debe tener en cuenta al momento de migrar modelos y esquemas de metadatos anteriores como: BDCOL, SNAAC, LA REFERENCIA, DRIVER, OPENAIRE 2.0, OPENAIRE 3.0.</li>
+</ul>
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright MinCiencias 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

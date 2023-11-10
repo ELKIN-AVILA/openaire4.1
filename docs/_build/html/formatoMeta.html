@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.1. Formato de metadatos &mdash; Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023 1.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://hypothes.is/embed.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index2.html" class="icon icon-home">
+            Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023
+          </a>
+              <div class="version">
+                4.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference external" href="https://redcol.minciencias.gov.co/vufind/Content/directrices">Directrices para repositorios institucionales de investigación v1:</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index2.html">Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index2.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">4.1. Formato de metadatos</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/formatoMeta.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="formato-de-metadatos">
+<span id="formatometa"></span><h1>4.1. Formato de metadatos<a class="headerlink" href="#formato-de-metadatos" title="Permalink to this headline">¶</a></h1>
+<p>Aunque el modelo de metadatos utilizado de manera predominante hasta el momento ha sido Dublin Core (modelo de metadatos ha sido desarrollado por la DCMI - Dublin Core Metadata Initiative) en su versión básica (15 Campos), se hace evidente que se requiere aumentar y normalizar la cantidad de campos de metadatos y modelos (esquemas) de metadatos asociados con el fin de proveer mayor calidad semántica de los datos.</p>
+<p>Así mismo, se requiere diferenciar el entorno de utilización de los metadatos en los distintos sistemas de información documentales (Sistemas de información de investigación, Repositorios institucionales , Bibliotecas Digitales, y Sistemas de publicación monográficos/seriados es el componente de Interoperabilidad del sistema de información) ya que en general, no se tiene claridad de la diferencia de uso y aplicación de los metadatos de entrada y los metadatos de salida y la transformación (mapeo - crosswalk) de los campos en estas dos instancias dependiendo del entorno de utilización:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Metadatos de Entrada: Corresponde con el conjunto de campos agregados al recurso de información en el momento de su creación ó registro en un sistema informático asociado (Sistema de Información). Estos campos son generalmente agregados por humanos y máquinas (campos automáticos). Generalmente se utiliza el conjunto de campos asociado al modelo dublon core con calificadores (especificadores) de campo (ej. DC.relation.hasPart)</li>
+<li>Metadatos de Salida: Corresponde con el conjunto de campos desplegados mediante  una interfaz de salida del sistema de información y que son transformados  (Distintos modelos de metatados) de acuerdo a los requerimientos del usuario (Humano / Maquina)</li>
+</ul>
+</div></blockquote>
+<p>El conjunto de directrices de RedCol ha tomado en cuenta los siguientes modelos de metadatos existentes con el fin de promover arquitecturas más abiertas que involucren nuevos alcances de campos, nuevas y distintas tipologías documentales y nuevos vocabularios especializados para la descripción estandarizada de los recursos de información:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="24%" />
+<col width="42%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Modelo de Metadatos</th>
+<th class="head">Codificación REDCOL (espacios de Nombre)</th>
+<th class="head">URL Esquema Definición</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Simple DC XML Schema</td>
+<td>dc</td>
+<td><a class="reference external" href="http://purl.org/dc/elements/1.1/">http://purl.org/dc/elements/1.1/</a></td>
+</tr>
+<tr class="row-odd"><td>DCMI Metadata Terms Schema</td>
+<td>dcterms</td>
+<td><a class="reference external" href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></td>
+</tr>
+<tr class="row-even"><td>Learning Object Metadata Schema definition (LOM)</td>
+<td>lom</td>
+<td><a class="reference external" href="http://standards.ieee.org/reading/ieee/downloads/LOM/lomv1.0/xsd/lom.xsd">http://standards.ieee.org/reading/ieee/downloads/LOM/lomv1.0/xsd/lom.xsd</a></td>
+</tr>
+<tr class="row-odd"><td>Electronic Theses and Dissertation Metadata Schema (ETD-MS)</td>
+<td>thesis</td>
+<td><a class="reference external" href="http://www.ndltd.org/standards/metadata/etd-ms-v1.1.html">http://www.ndltd.org/standards/metadata/etd-ms-v1.1.html</a></td>
+</tr>
+<tr class="row-even"><td>DataCite Metadata Schema</td>
+<td>datacite</td>
+<td><a class="reference external" href="https://schema.datacite.org/meta/kernel-4.1/metadata.xsd">https://schema.datacite.org/meta/kernel-4.1/metadata.xsd</a></td>
+</tr>
+<tr class="row-odd"><td>OpenAire Specification Schema</td>
+<td>oaire</td>
+<td><a class="reference external" href="http://namespace.openaire.eu/schema/oaire/">http://namespace.openaire.eu/schema/oaire/</a></td>
+</tr>
+</tbody>
+</table>
+<p>La Red Colombiana de Información Científica espera que los metadatos utilizados los distintos sistemas de información que se adhieran a la iniciativa y se codifiquen siguiendo el formato de metadatos definido en el <strong>“Perfil de aplicación de metadatos”</strong> que se presenta en este documento.</p>
+<p>Para interoperabilidad en sistemas DSPACE, se recomienda crear un listado de modelos de metadatos que incluya los modelos de metadaots anteriormente mencionados con sus correspondientes campos:</p>
+<a class="reference internal image-reference" href="_images/41formatoMet.jpg"><img alt="_images/41formatoMet.jpg" src="_images/41formatoMet.jpg" style="width: 961.6px; height: 376.0px;" /></a>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright MinCiencias 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

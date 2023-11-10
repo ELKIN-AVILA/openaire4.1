@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5.7. Related Identifier (Identificador relacionado) (R) &mdash; Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023 1.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://hypothes.is/embed.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index2.html" class="icon icon-home">
+            Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023
+          </a>
+              <div class="version">
+                4.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference external" href="https://redcol.minciencias.gov.co/vufind/Content/directrices">Directrices para repositorios institucionales de investigación v1:</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index2.html">Directrices para repositorios institucionales de investigación de la Red Colombiana de Información Científica 2023</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index2.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">5.7. Related Identifier (Identificador relacionado) (R)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/field_relatedidentifier.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="related-identifier-identificador-relacionado-r">
+<span id="dci-relatedidentifier"></span><h1>5.7. Related Identifier (Identificador relacionado) (R)<a class="headerlink" href="#related-identifier-identificador-relacionado-r" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">datacite:relatedIdentifier</span></code></p>
+<div class="section" id="definicion-y-alcance-del-campo">
+<h2>5.7.1. Definición y alcance del campo<a class="headerlink" href="#definicion-y-alcance-del-campo" title="Permalink to this headline">¶</a></h2>
+<p>Este campo contiene uno o varios identificadores de recursos relacionados con el recurso que se está describiendo. Este campo no contiene el Identificador primario del recurso, ni identificadores alternativos del mismo.</p>
+<p>Este campo de identificador es utilizado conjuntamente con una propiedad de relación adjunta según corresponda. El uso de este campo es opcional pero recomendado.</p>
+<p>Adicionalmente este campo permite gestionar las referencias bibliográficas (bibliografía) del recurso de información. (<a class="reference external" href="https://www.dublincore.org/specifications/dublin-core/dc-citation-guidelines/">https://www.dublincore.org/specifications/dublin-core/dc-citation-guidelines/</a>)</p>
+</div>
+<div class="section" id="niveles-de-persistencia-m-ma-r-o">
+<h2>5.7.2. Niveles de persistencia (M/MA/R/O)<a class="headerlink" href="#niveles-de-persistencia-m-ma-r-o" title="Permalink to this headline">¶</a></h2>
+<p>Recomendado (R)</p>
+</div>
+<div class="section" id="niveles-de-ocurrencia-r-nr">
+<h2>5.7.3. Niveles de ocurrencia (R / NR )<a class="headerlink" href="#niveles-de-ocurrencia-r-nr" title="Permalink to this headline">¶</a></h2>
+<p>Repetible (R) <strong>0-n veces.</strong></p>
+<p>Repita este campo para colocar cada uno de los identificadores relacionados necesarios.</p>
+</div>
+<div class="section" id="esquema-de-metadatos">
+<h2>5.7.4. Esquema de metadatos<a class="headerlink" href="#esquema-de-metadatos" title="Permalink to this headline">¶</a></h2>
+<p>datacite:relatedIdentifier</p>
+<ul class="simple">
+<li><strong>Nota:</strong> Este campo se ha adaptado del esquema de metadatos DATACITE MetadataKernel versión 4.1 (<a class="reference external" href="http://doi.org/10.5438/0014">http://doi.org/10.5438/0014</a>), el cual es utilizado ampliamente para la gestión de documentos y datos.</li>
+</ul>
+</div>
+<div class="section" id="traduccion-al-espanol">
+<h2>5.7.5. Traducción al español<a class="headerlink" href="#traduccion-al-espanol" title="Permalink to this headline">¶</a></h2>
+<p>Identificador relacionado</p>
+</div>
+<div class="section" id="forma-de-descripcion-normalizada-rda-rcaa2-isbd">
+<h2>5.7.6. Forma de Descripción Normalizada (RDA / RCAA2 / ISBD)<a class="headerlink" href="#forma-de-descripcion-normalizada-rda-rcaa2-isbd" title="Permalink to this headline">¶</a></h2>
+<p>RDA (Recursos: descripción y acceso)</p>
+<p>Revise la forma adecuada para ingresar el identificador relacionado con su debida puntuación según el esquema de identificación utilizado.</p>
+<p>Para la gestión de recursos relacionados se puede utilizar texto libre ó identificadores normalizados según los vocabularios predefinidos.</p>
+</div>
+<div class="section" id="propiedades-atributos-y-especificadores-de-campo">
+<h2>5.7.7. Propiedades, atributos y especificadores de campo<a class="headerlink" href="#propiedades-atributos-y-especificadores-de-campo" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="propiedad-del-identificador-relacionado-relatedidentifier-r-0-n">
+<h3>5.7.7.1. Propiedad del Identificador Relacionado (relatedIdentifier) (R, 0-n):<a class="headerlink" href="#propiedad-del-identificador-relacionado-relatedidentifier-r-0-n" title="Permalink to this headline">¶</a></h3>
+<p>Esta propiedad permite especificar el valor del identificador relacionado que se le ha otorgado al recurso.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Atributo: Tipo de identificador relacionado (relatedIdentifierType)  (M, 1 si la propiedad RelatedIdentifier es utilizada):</strong> Este atributo permite especificar el tipo de identificador relacionado al recurso. Se debe tener en cuenta los siguientes tipos de identificadores y su codificación normalizada según el vocabulario controlado propuesto:</li>
+</ul>
+</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="85%" />
+<col width="7%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Vocabulario Normalizado</th>
+<th class="head">Descripción del Atributo</th>
+<th class="head">Dominio de Vocabulario</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ARK</td>
+<td>Clave de recursos de archivo</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>arXiv</td>
+<td>Identificador de <a class="reference external" href="https://arxiv.org/">https://arxiv.org/</a></td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>bibcode</td>
+<td>Códigos bibliográficos del Sistema de Datos Astrofísicos; bibcodes se pueden resolver a través de <a class="reference external" href="http://adsabs.harvard.edu/abs/bibcode">http://adsabs.harvard.edu/abs/bibcode</a></td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>DOI</td>
+<td>Identificador de Objeto Digital. Código alfanumérico que sirva para identificar de forma única un documento digital.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>EAN13</td>
+<td>Número de artículo europeo, ahora renombrado como Número de artículo internacional, pero que conserva el acrónimo original, es un estándar de código de barras de 13 dígitos que es un superconjunto del sistema del Código de producto universal (UPC) original de 12 dígitos.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>EISSN</td>
+<td>Número internacional normalizado de publicaciones seriadas (versión electrónica), permite identificar de manera única una colección seriada evitando posibles errores en la transcripción del título o información bibliográfica.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>Handle</td>
+<td>Es un identificador persistente, es decir, un sistema de especificación para nombres e identificación de servicios.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>IGSN</td>
+<td>Número de muestra internacional Geo; un código alfanumérico de 9 dígitos que identifica de forma exclusiva muestras de nuestro entorno natural y funciones de muestreo relacionadas.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>ISBN</td>
+<td>Número internacional normalizado de libros, es un identificador único para libros, prevista para su uso comercial.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>ISSN</td>
+<td>Número internacional normalizado de publicaciones seriadas, permite identificar de manera única una colección seriada evitando posibles errores en la transcripción del título o información bibliográfica.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>ISTC</td>
+<td>Código internacional normalizado de obras textuales, es un identificador único para obras textuales siempre y cuando exista una intención de producir dicha obra en forma de una o más manifestaciones.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>ISSN-L</td>
+<td>Es un número específico que reúne los diferentes soportes en los que se edita una publicación seriada.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>LSID</td>
+<td>Es el identificador único de las ciencias naturales, considerándose una especificación en curso del Nombre del Recurso Uniforme (URN) y permite identificar los recursos en diferentes almacenes de datos biológicamente significativos.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>PISSN</td>
+<td>Número internacional normalizado de publicaciones seriadas, permite identificar de manera única una colección seriada evitando posibles errores en la transcripción del título o información bibliográfica. (versión impresa)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>PMID</td>
+<td>ID de PubMed. Número único asignado a cada cita de artículo de revistas biomédicas y de las ciencias naturales.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>PURL</td>
+<td>Localizador de recursos uniforme y persistente, se utiliza para referenciar un determinado recurso que cambia de dirección a lo largo del tiempo desde una misma dirección.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>UPC</td>
+<td>Código de producto universal, es un código de barras utilizado para rastrear artículos comerciales. Su forma más común, la UPC-A, consta de 12 dígitos numéricos.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>URL</td>
+<td>Localizador Uniforme de Recursos, es la dirección específica que se le asigna a cada uno de los recursos disponibles en la red con el fin de localizarlos e identificarlos fácilmente.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>URN</td>
+<td>Nombre del recurso uniforme, permite identificar recursos en la web pero no indica exactamente dónde se encuentra el recurso.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>WOS</td>
+<td>Número de acceso a la Web of Science, es una identificación asociada a cada registro del producto, formado por el número de acceso del productor y un número secuencial.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>OTHER</td>
+<td>Texto libre para describir otro tipo de relaciones</td>
+<td>redcol</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Atributo: Tipo de Relación (relationType) (M, 1):</strong> Este atributo permite describir la relación del recurso que se está describiendo (A) con otro recurso relacionado (B).  Es obligatorio si se utiliza la propiedad <strong>relatedIdentifier.</strong> Se debe tener en cuenta los siguientes tipos de relación y su codificación normalizada según el vocabulario controlado propuesto:</li>
+</ul>
+</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="6%" />
+<col width="7%" />
+<col width="81%" />
+<col width="6%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Vocabulario</th>
+<th class="head">Traducción</th>
+<th class="head">Descripción</th>
+<th class="head">Dominio de Vocabulario</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>IsCitedBy</td>
+<td>Es citado por</td>
+<td>(indica que B incluye A en una cita)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Cites</td>
+<td>Cita</td>
+<td>(indica que A incluye B en una cita)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>IsSupplementTo</td>
+<td>Es complemento de</td>
+<td colspan="2">(indica que A es un complemento de B)                                                                                                                                                                                                                                                                          | datacite</td>
+</tr>
+<tr class="row-odd"><td>IsSupplementedBy</td>
+<td>Es complementado por</td>
+<td colspan="2">(indica que B es un complemento de A)                                                                                                                                                                                                                                                                           | datacite</td>
+</tr>
+<tr class="row-even"><td>IsContinuedBy</td>
+<td>Es continuado por</td>
+<td>(indica que A es continuado por el trabajo B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Continues</td>
+<td>Continúa</td>
+<td>(indica que A es una continuación del trabajo B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>IsDescribedBy</td>
+<td>Se describe por</td>
+<td>(indica que A está descrito por B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Describes</td>
+<td>Describe</td>
+<td>(indica que A describe a B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>HasMetadata</td>
+<td>Tiene metadatos</td>
+<td>(indica que el recurso A tiene metadatos adicionales de B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>IsMetadataFor</td>
+<td>Es metadatos para</td>
+<td>(indica metadatos adicionales A para un recurso B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>HasVersion</td>
+<td>Tiene version</td>
+<td>(indica que A tiene una versión B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>IsVersionOf</td>
+<td>Es la versión de</td>
+<td>(indica que A es una versión de B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>IsNewVersionOf</td>
+<td>Es la nueva versión de</td>
+<td>(indica que A es una nueva edición de B, donde la nueva edición se ha modificado o actualizado)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>IsPreviousVersionOf</td>
+<td>Es la versión anterior de</td>
+<td>(indica que A es una edición previa de B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>IsPartOf</td>
+<td>Es parte de</td>
+<td>(indica que A es una parte de B, puede usarse para describir documentos fuente)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>HasPart</td>
+<td>Tiene parte</td>
+<td>(indica que A incluye la parte B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>IsReferencedBy</td>
+<td>Es referenciado por</td>
+<td>(indica que A se usa como fuente de información por B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>References</td>
+<td>Referencias</td>
+<td>(Indica que B se usa como fuente de información para A) NOTA: Este campo permite gestionar las referencias bibliográficas del recurso.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>IsDocumentedBy</td>
+<td>Es documentado por</td>
+<td>(indica que B es documentación sobre / explicando A)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Documents</td>
+<td>Documentos</td>
+<td>(indica que A es documentación sobre / explicando B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>IsCompiledBy</td>
+<td>Es compilado por</td>
+<td>(indica que B se usa para compilar o crear A)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Compiles</td>
+<td>Compila</td>
+<td>(indica que B es el resultado de un evento de compilación o creación usando A)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>IsVariantFormOf</td>
+<td>Es la forma variante de</td>
+<td>(indica que A es una variante o forma diferente de B, por ejemplo, forma calculada o calibrada o empaque diferente)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>IsOriginalFormOf</td>
+<td>Es la forma original de</td>
+<td>(indica que A es la forma original de B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>IsIdenticalTo</td>
+<td>Es idéntico a</td>
+<td>(indica que A es idéntico a B, para usar cuando es necesario registrar dos instancias separadas del mismo recurso)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>IsReviewedBy</td>
+<td>Es revisado por</td>
+<td>(indica que A es revisado por B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>Reviews</td>
+<td>Opiniones</td>
+<td>(indica que A es una revisión de B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>IsDerivedFrom</td>
+<td>Se deriva de</td>
+<td>(indica que B es una fuente en la que se basa A)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>IsSourceOf</td>
+<td>Es fuente de</td>
+<td>(indica que A es una fuente en la que B se basa)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>IsRequiredBy</td>
+<td>Es requerido por</td>
+<td>(indica que A requiere B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>Requires</td>
+<td>Requiere</td>
+<td>(indica que A requiere B)</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>IsPartOfSeries</td>
+<td>Es parte de la Serie</td>
+<td>(indica que A es una parte de una serie de publicación B; puede usarse para elementos de una serie)</td>
+<td>redcol</td>
+</tr>
+<tr class="row-even"><td>instname</td>
+<td>Nombre de la institución</td>
+<td>Indica que A pertenece a la institución B. Texto normalizado para los los recursos de información asociados a un dominio ó institución que serán usado exclusivamente para describir los identificadores relacionados: instname y reponame que son requeridos por LaReferencia.</td>
+<td>redcol</td>
+</tr>
+<tr class="row-odd"><td>reponame</td>
+<td>Nombre del Repositorio</td>
+<td>Indica que A pertenece al repositorio de la institución B. Texto normalizado para los los recursos de información asociados a un dominio ó institución que serán usado exclusivamente para describir los identificadores relacionados: instname y reponame que son requeridos por LaReferencia.</td>
+<td>redcol</td>
+</tr>
+<tr class="row-even"><td>repourl</td>
+<td>URL del repositorio</td>
+<td>Indica que A se encuentra en la URL del repositorio de la institución B. Texto normalizado para los los recursos de información asociados a un dominio ó institución que serán usado exclusivamente para describir los identificadores relacionados: instname y reponame que son requeridos por LaReferencia.</td>
+<td>redcol</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Atributo: Esquema de metadatos relacionado (relatedMetadataScheme)  (O, 0-1):</strong> Este atributo permite establecer un esquema de metadatos utilizado para describir la relación del identificador. Este atributo debe ser únicamente utilizado si el atributo anterior relationType es utilizado y este contiene los valores (HasMetadata/IsMetadataFor).</li>
+<li><strong>Atributo: URI del esquema de metadatos relacionado (schemeURI)  (O, 0-1):</strong>  Este atributo permite establecer la URI normalizada del esquema de metadatos utilizado para describir la relación del identificador en un formato estándar (XSD,DDT, Turtle) . Este atributo debe ser únicamente utilizado si el atributo anterior relationType es utilizado y este contiene los valores (HasMetadata/IsMetadataFor).</li>
+<li><strong>Atributo: Tipo de esquema de metadatos relacionado (schemeType)  (O, 0-1):</strong> Este atributo contiene el tipo de formato del esquema de metadatos que fue vinculado en el atributo anterior schemeURI (XSD,DDT, Turtle). Este atributo debe ser únicamente utilizado si el atributo anterior relationType es utilizado y este contiene los valores (HasMetadata/IsMetadataFor).</li>
+<li><strong>Atributo: Tipo de contenidos en el recurso relacionado (resourceTypeGeneral)  (O, 0-1):</strong> Este campo describe el tipo de contenidos que se encuentran en el recurso relacionado. Se debe tener en cuenta los siguientes tipos de contenidos normalizados y su codificación normalizada según el vocabulario controlado propuesto:</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="82%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Vocabulario Normalizado</th>
+<th class="head">Descripción del Atributo</th>
+<th class="head">Dominio de Vocabulario</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Audiovisual</td>
+<td>Contenido Audiovisual/Multimedia. Una serie de representaciones visuales que imparten una impresión de movimiento cuando se muestran en sucesión. Puede o no incluir sonido. En el Vocabulario DC se representa como MovingImage</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Collection</td>
+<td>Contenido Colección. Una agregación de recursos, que puede abarcar colecciones de un tipo de recurso así como de tipos mixtos. Una colección se describe como un grupo; Sus partes también se pueden describir por separado.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>DataPaper</td>
+<td>Contenido Publicación de datos. Una publicación especializada con la intención de identificar y describir datos específicos, conjuntos de datos o recopilaciones de datos para facilitar el descubrimiento.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Dataset</td>
+<td>Contenido Conjunto de datos. Datos codificados en una estructura definida.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>Event</td>
+<td>Contenido Acontecimiento. Una ocurrencia no persistente, basada en el tiempo.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Image</td>
+<td>Contenido Imagen. Una representación visual que no sea texto. En el vocabulario DC se representa como Image, StillImage</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>InteractiveResource</td>
+<td>Contenido Recurso interactivo. Un recurso que requiere la interacción del usuario para ser comprendido, ejecutado o experimentado.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Model</td>
+<td>Contenido Modelo. Un modelo abstracto, conceptual, gráfico, matemático o de visualización que representa objetos empíricos, fenómenos o procesos físicos.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>PhysicalObject</td>
+<td>Contenido Objeto físico. Un objeto o sustancia inanimada, tridimensional.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Service</td>
+<td>Contenido Servicio. Un sistema organizado de aparatos, aparatos, personal, etc., para suministrar algunas funciones requeridas por los usuarios finales.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>Software</td>
+<td>Contenido Software. Un programa informático en código fuente (texto) o en forma compilada. Utilice este tipo de contenido para todos los componentes de software relacionados.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Sound</td>
+<td>Contenido Sonido. Un recurso destinado principalmente a ser escuchado.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>Text</td>
+<td>Contenido Texto. Un recurso formado principalmente por palabras para la lectura.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-odd"><td>Workflow</td>
+<td>Contenido Flujo de Trabajo. Una serie estructurada de pasos que se pueden ejecutar para producir un resultado final, que permite a los usuarios especificar y ejecutar su trabajo de una manera más reproducible.</td>
+<td>datacite</td>
+</tr>
+<tr class="row-even"><td>Other</td>
+<td>Contenido Otros. Contenido que no se puede describir en los anteriores elementos.</td>
+<td>datacite</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="relaciones-con-otros-campos">
+<h2>5.7.8. Relaciones con otros campos<a class="headerlink" href="#relaciones-con-otros-campos" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Este campo tiene una estrecha relación con el campo <strong>dc.relation,</strong> ya que especifica una relación del recurso con otro recurso a través del uso de identificadores normalizados.</li>
+<li>En los campos <strong>dc.relation</strong> y sus respectivos calificadores, se puede complementar la información de la relación descrita en este campo utilizando texto libre.</li>
+<li>No debe confundirse el Identificador relacionado <strong>(datacite.relatedIdentifier)</strong> del recurso el identificador alternativo <strong>(datacite.alternativeIdentifier)</strong> del mismo.</li>
+<li>Para la gestión de referencias bibliográficas <strong>(dc.relation.references / dcterms.references)</strong> se debe utilizar el atributo: Tipo de Relación <strong>(relationType)</strong> con el valor de vocabulario controlado <strong>“References”.</strong> Se desaconseja la utilización del campo <strong>“dc.source.bibliographicCitation”</strong> ya que no se encuentra normalizado. (<a class="reference external" href="https://www.dublincore.org/specifications/dublin-core/dc-citation-guidelines/">https://www.dublincore.org/specifications/dublin-core/dc-citation-guidelines/</a>)</li>
+<li>No debe confundirse el uso del campo de gestión de la Bibliografía de un recurso de información (Citas Bibliográficas) que se gestiona como elementos relacionados en el campo (datacite.relatedIdentifier(references) / dc.relation.references ) con el Identificador alternativo del Recurso mostrado como una cita Bibliográfica (dc.identifier.bibliographicCitation / dcterms.bibliographicCitation / dc.identifier.citation) y que contiene las cita bibliográfica que permite identificar el recurso de origen (Identifica de manera unívoca al recurso de origen en un formato normalizado (ISO, APA,IEEE, Vancouver, etc..)).</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="restricciones">
+<h2>5.7.9. Restricciones<a class="headerlink" href="#restricciones" title="Permalink to this headline">¶</a></h2>
+<p>No aplica</p>
+</div>
+<div class="section" id="ejemplos-y-ayuda">
+<h2>5.7.10. Ejemplos y ayuda<a class="headerlink" href="#ejemplos-y-ayuda" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ayudas">
+<h3>5.7.10.1. Ayudas<a class="headerlink" href="#ayudas" title="Permalink to this headline">¶</a></h3>
+<p><strong>Identificador Relacionado:</strong> Identificador del recurso, puede ser una cadena alfanumérica que sea única dentro de su dominio o emisión. También pueden utilizarse identificadores locales.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Ej: (metadataScheme): dc.relatedIdentifier.metadataScheme     DarwinCore</li>
+<li>Ej: (relation): dc.relatedIdentifier.relation IsPartOf</li>
+<li>Ej: (schemeType): dc.relatedIdentifier.schemeType     URL</li>
+<li>Ej: (schemeURI): dc.relatedIdentifier.schemeURI       <a class="reference external" href="http://uninmar.icmyl.unam.mx/search?query=">http://uninmar.icmyl.unam.mx/search?query=</a></li>
+<li>Ej: (relatedIdentifier): dc.relatedIdentifier Macrocallista nimbosa</li>
+<li>Ej: (Nombre de la institución que provee el repositorio)(instname). Ej: Universidad de los Andes.</li>
+<li>Ej: (Nombre del Repositorio) (reponame). Ej: Séneca.</li>
+<li>Ej: (URL  del Repositorio) (repourl). Ej: <a class="reference external" href="https://repositorio.uniandes.edu.co">https://repositorio.uniandes.edu.co</a></li>
+<li><dl class="first docutils">
+<dt>Ej: Citación bibliográfica (dc.relation.references / dcterms.references):</dt>
+<dd><ul class="first last">
+<li>Altemeyer, B. (1981). Right-Wing Authoritarianism. Winnipeg: University of Manitoba Press.</li>
+<li>Asún, R. A., Rdz-Navarro, K., &amp; Alvarado, J. M. (2015). Developing Multidimensional Likert Scales Using Item Factor Analysis: The Case of Four-point Items. Sociological Methods &amp; Research, 45(8), 744-749. doi: <a class="reference external" href="https://doi.org/10.1177/0049124114566716">https://doi.org/10.1177/0049124114566716</a>.</li>
+<li>Frank, R. H., &amp; Bernanke, B. (2007). Principios de microeconomía. (3rd ed.). Boston, MA: McGraw-Hill/Irwin.</li>
+<li>Barros, T. S., Torres, A. R. R., &amp; Pereira, C. (2009). Psico-USF (Vol. 14 ). Universidade São Francisco. Recuperado de <a class="reference external" href="http://pepsic.bvsalud.org/scielo.php?script=sci_arttext&amp;pid=S1413-82712009000100006">http://pepsic.bvsalud.org/scielo.php?script=sci_arttext&amp;pid=S1413-82712009000100006</a>.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="ejemplo-en-xml-interoperabilidad-oai-pmh">
+<h3>5.7.10.2. Ejemplo en XML (Interoperabilidad OAI-PMH)<a class="headerlink" href="#ejemplo-en-xml-interoperabilidad-oai-pmh" title="Permalink to this headline">¶</a></h3>
+<p><strong>Esquema oai_dc</strong></p>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="nt">&lt;dc:relation&gt;</span>(BIB LVL) t-PRODUCCIÓN UGR<span class="nt">&lt;/dc:relation&gt;</span>
+     <span class="nt">&lt;dc:relation&gt;</span>(ES-GrU)b13b2009100x-34cbua_ugr<span class="nt">&lt;/dc:relation&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nt">&lt;dc.relation.references&gt;</span>CEPAL. (2017). Panorama fiscal de américa latina. La movilización de recursos para el financiamiento del desarrollo sostenible <span class="nt">&lt;/dc.relation.references&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Esquema DataCite</strong></p>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nt">&lt;datacite:relatedIdentifiers&gt;</span>
+   <span class="nt">&lt;datacite:relatedIdentifier</span> <span class="na">relatedIdentifierType=</span><span class="s">&quot;URL&quot;</span> <span class="na">relationType=</span><span class="s">&quot;HasPart&quot;</span><span class="nt">&gt;</span>http://someUrl<span class="nt">&lt;/datacite:relatedIdentifier&gt;</span>
+<span class="nt">&lt;/datacite:relatedIdentifiers&gt;</span>
+
+<span class="nt">&lt;relatedIdentifiers&gt;</span>
+   <span class="nt">&lt;relatedIdentifier</span> <span class="na">relatedIdentifierType=</span><span class="s">&quot;DOI&quot;</span> <span class="na">relationType=</span><span class="s">&quot;Cites&quot;</span><span class="nt">&gt;</span>10.1002/2015JD024666<span class="nt">&lt;/relatedIdentifier&gt;</span>
+   <span class="nt">&lt;relatedIdentifier</span> <span class="na">relatedIdentifierType=</span><span class="s">&quot;DOI&quot;</span> <span class="na">relationType=</span><span class="s">&quot;Cites&quot;</span><span class="nt">&gt;</span>10.5194/acp-17-4871-2017<span class="nt">&lt;/relatedIdentifier&gt;</span>
+<span class="nt">&lt;/relatedIdentifiers&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="nt">&lt;relatedIdentifier</span> <span class="na">relatedIdentifierType=</span><span class="s">&quot;DOI&quot;</span> <span class="na">relationType=</span><span class="s">&quot;IsSourceOf&quot;</span><span class="nt">&gt;</span> https://doi.org/10.5194/angeo-36-1-2018 <span class="nt">&lt;/relatedIdentifier&gt;</span>
+
+     <span class="nt">&lt;relatedIdentifier</span> <span class="na">relatedIdentifierType=</span><span class="s">&quot;URL&quot;</span> <span class="na">relationType=</span><span class="s">&quot;IsSourceOf&quot;</span><span class="nt">&gt;</span> http://132.248.9.195/ptd2018/agosto/0778042/Index.html <span class="nt">&lt;/relatedIdentifier&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Esquema xoai</strong></p>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;relation&quot;</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;cites&quot;</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;none&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;value&quot;</span><span class="nt">&gt;</span>10.1002/2015JD024666<span class="nt">&lt;/field&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;value&quot;</span><span class="nt">&gt;</span>10.5194/acp-17-4871-2017<span class="nt">&lt;/field&gt;</span>
+         <span class="nt">&lt;/element&gt;</span>
+     <span class="nt">&lt;/element&gt;</span>
+ <span class="nt">&lt;/element&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;dcterms&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;references&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;element</span> <span class="na">name=</span><span class="s">&quot;spa&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;value&quot;</span><span class="nt">&gt;</span>ABColombia, Corporación SISMA Mujer y The U.S. Office en Colombia (USOC) (2013). Colombia: Women, conflict – related sexual violence and the peace process. Recuperado de https://www.christianaid.org.uk/images/ABColombia-conflict-relatedsexual-violence-report.pdf<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;/element&gt;</span>
+  <span class="nt">&lt;/element&gt;</span>
+     <span class="nt">&lt;/element&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Esquema dim</strong></p>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="nt">&lt;dim:field</span> <span class="na">mdschema=</span><span class="s">&quot;dc&quot;</span> <span class="na">element=</span><span class="s">&quot;relation&quot;</span> <span class="na">qualifier=</span><span class="s">&quot;isreferencedby&quot;</span><span class="nt">&gt;</span>(BIB LVL) t-PRODUCCIÓN UGR<span class="nt">&lt;/dim:field&gt;</span>
+     <span class="nt">&lt;dim:field</span> <span class="na">mdschema=</span><span class="s">&quot;dc&quot;</span> <span class="na">element=</span><span class="s">&quot;relation&quot;</span> <span class="na">qualifier=</span><span class="s">&quot;isreferencedby&quot;</span><span class="nt">&gt;</span>(ES-GrU)b13b2009100x-34cbua_ugr<span class="nt">&lt;/dim:field&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-xml notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="nt">&lt;dim:field</span> <span class="na">mdschema=</span><span class="s">&quot;dcterms&quot;</span> <span class="na">element=</span><span class="s">&quot;references&quot;</span> <span class="na">lang=</span><span class="s">&quot;spa&quot;</span><span class="nt">&gt;</span>Arias, A. (2008). Multiculturalismo y Derechos Indígenas. El caso mexicano. México D.F: Comisión Nacional de los Derechos Humanos.<span class="nt">&lt;/dim:field&gt;</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="niveles-de-aplicacion-para-productos-de-investigacion-de-minciencias">
+<h2>5.7.11. Niveles de aplicación para productos de investigación de MinCiencias<a class="headerlink" href="#niveles-de-aplicacion-para-productos-de-investigacion-de-minciencias" title="Permalink to this headline">¶</a></h2>
+<p>Aplica para libros, revistas, artículos, documentos de trabajo, proyectos de investigación, norma técnica, proyecto de ley.</p>
+</div>
+<div class="section" id="relaciones-con-otros-modelos-de-metadatos">
+<h2>5.7.12. Relaciones con otros modelos de metadatos<a class="headerlink" href="#relaciones-con-otros-modelos-de-metadatos" title="Permalink to this headline">¶</a></h2>
+<p>El campo Identificador Relacionado (datacite:relatedIdentifier) es utilizado por los siguientes esquemas de metadatos y puede intercambiarse su uso de manera indistinta mientras se conserven sus distintos niveles de atributos y especificadores de campo:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Esquema de Metadatos</th>
+<th class="head">Campo Relacionado</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>dc</td>
+<td>dc.relation</td>
+</tr>
+<tr class="row-odd"><td>dcterms</td>
+<td><ul class="first last simple">
+<li>dcterms.conformsTo</li>
+<li>dcterms.hasFormat</li>
+<li>dcterms.hasPart</li>
+<li>dcterms.hasVersion</li>
+<li>dcterms.isFormatOf</li>
+<li>dcterms.isPartOf</li>
+<li>dcterms.IsPartOfSeries</li>
+<li>dcterms.isReferencedBy</li>
+<li>dcterms.isReplacedBy</li>
+<li>dcterms.isRequiredBy</li>
+<li>dcterms.isVersionOf</li>
+<li>dcterms.references</li>
+<li>dcterms.replaces</li>
+<li>dcterms.requires</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>marcxml</td>
+<td>field: 050, 052, 055, 061, 071, 072, 080, 082, 084, 086, 088, 090</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="niveles-semanticos">
+<h2>5.7.13. Niveles semánticos<a class="headerlink" href="#niveles-semanticos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Este campo contempla la utilización de distintos calificadores de relación como atributos estandarizados según un vocabulario específico <strong>(relationType).</strong></li>
+<li>Adicionalmente, se toma un elemento de identificación estandarizados según un vocabulario específico como un atributo asociado a un identificador persistente <strong>(relatedIdentifierType).</strong></li>
+<li>Así mismo se utiliza un vocabulario controlado para especificar el tipo de contenido que tiene el recurso relacionado <strong>(resourceTypeGeneral).</strong></li>
+</ul>
+</div>
+<div class="section" id="recomendacion-de-campos-de-aplicacion-en-dspace">
+<h2>5.7.14. Recomendación de campos de aplicación en DSPACE<a class="headerlink" href="#recomendacion-de-campos-de-aplicacion-en-dspace" title="Permalink to this headline">¶</a></h2>
+<p>Para la gestión de la <strong>bibliografía</strong> se recomienda utilizar el campo <strong>(dc.relation.references)</strong>, allí se puede registrar las referencias bibliográficas del recurso en estilos de citación normalizados. Se recomienda tomarlas tal cual como aparecen en el recurso. Ej: Loyola A, Tagami H, Bonaldi T, Roche D, Quivy JP, Imhof A, et al. The HP1alpha-CAF1-SetDB1-containing complex provides H3K9me1 for Suv39-mediated K9me3 in pericentric heterochromatin. EMBO Rep [Internet]. 2009 Jul;10(7):769–75.</p>
+<p>Para tener una guía de los estilos de citación, se recomienda revisar las siguientes normas:</p>
+<ul class="simple">
+<li><strong>APA (American Psychological Association):</strong>  Este estilo ya cuenta con seis ediciones y explica cómo se deben presentar artículos científicos: márgenes, fuente, tamaño de letra, uso de color, gráficas, tablas, y citación y referenciación.</li>
+<li><strong>ICONTEC:</strong> Estas normas fueron definidas por el comité técnico del Instituto Colombiano de Normas Técnicas y Certificación, el cual es un organismo multinacional de carácter privado, dedicado a la gestión de la calidad en Colombia, Chile, Ecuador, El Salvador, Guatemala, Honduras y Perú.</li>
+<li><strong>IEEE (Institute of Electrical and Electronics Engineers):</strong> Este estilo de citación es definido por la asociación científica internacional de técnicos e ingenieros dedicados a la estandarización y desarrollo, es el más utilizado en áreas de ingeniería para todo tipo de documentos.</li>
+<li><strong>MLA (Modern Language Association):</strong> Es un estilo y formato de citación bibliográfica para revistas, libros y otro tipo de textos académicos. Es utilizado principalmente en áreas de humanidades y artes,​ sobre todo en filosofía, crítica literaria, literatura comparada y en campos interdisciplinarios, como los estudios culturales.</li>
+<li><strong>VANCOUVER:</strong> Este estilo de citación válidas para todo tipo de documentos específico para las áreas de Ciencias de la Salud.</li>
+</ul>
+<p>Se recomienda crear/modificar el componente de registro de metadatos (y sus correspondientes hojas de entrada de datos) de los sistemas DSPACE basados en los siguientes elementos:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Para especificar recursos relacionados a través de identificadores normalizados ó utilizando texto libre, utilice el campo <strong>dc.relation</strong> y los siguientes calificadores de campo:</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="26%" />
+<col width="20%" />
+<col width="16%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Vocabulario controlado OpenAire/RedCol</th>
+<th class="head">Campo Elemento DSPACE</th>
+<th class="head">Calificadores</th>
+<th class="head">Nota de alcance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>IsCitedBy</td>
+<td>dc.relation</td>
+<td>iscitedby</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Cites</td>
+<td>dc.relation</td>
+<td>cites</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>IsSupplementTo</td>
+<td>dc.relation</td>
+<td>issupplementto</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IsSupplementedBy</td>
+<td>dc.relation</td>
+<td>issupplementedby</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>IsContinuedBy</td>
+<td>dc.relation</td>
+<td>iscontinuedby</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Continues</td>
+<td>dc.relation</td>
+<td>continues</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>IsDescribedBy</td>
+<td>dc.relation</td>
+<td>isdescribedby</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Describes</td>
+<td>dc.relation</td>
+<td>describes</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>HasMetadata</td>
+<td>dc.relation</td>
+<td>hasmetadata</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IsMetadataFor</td>
+<td>dc.relation</td>
+<td>ismetadatafor</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>HasVersion</td>
+<td>dc.relation</td>
+<td>hasversion</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IsVersionOf</td>
+<td>dc.relation</td>
+<td>isversionof</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>IsNewVersionOf</td>
+<td>dc.relation</td>
+<td>isnewversionof</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IsPreviousVersionOf</td>
+<td>dc.relation</td>
+<td>ispreviousversionof</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>IsPartOf</td>
+<td>dc.relation</td>
+<td>ispartof</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IsPartOfSeries</td>
+<td>dc.relation</td>
+<td>ispartofseries</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>HasPart</td>
+<td>dc.relation</td>
+<td>haspart</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IsReferencedBy</td>
+<td>dc.relation</td>
+<td>isreferencedby</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>References</td>
+<td>dc.relation</td>
+<td>references</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IsDocumentedBy</td>
+<td>dc.relation</td>
+<td>isdocumentedby</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Documents</td>
+<td>dc.relation</td>
+<td>documents</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IsCompiledBy</td>
+<td>dc.relation</td>
+<td>iscompiledby</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Compiles</td>
+<td>dc.relation</td>
+<td>compiles</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IsVariantFormOf</td>
+<td>dc.relation</td>
+<td>isvariantformof</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>IsOriginalFormOf</td>
+<td>dc.relation</td>
+<td>isoriginalformof</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IsIdenticalTo</td>
+<td>dc.relation</td>
+<td>isidenticalto</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>IsReviewedBy</td>
+<td>dc.relation</td>
+<td>isreviewedby</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Reviews</td>
+<td>dc.relation</td>
+<td>reviews</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>IsDerivedFrom</td>
+<td>dc.relation</td>
+<td>isderivedfrom</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>IsSourceOf</td>
+<td>dc.relation</td>
+<td>issourceof</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>IsRequiredBy</td>
+<td>dc.relation</td>
+<td>isrequiredby</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Requires</td>
+<td>dc.relation</td>
+<td>requires</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt><strong>Nota:</strong></dt>
+<dd><ul class="first last">
+<li><p class="first">Para especificar el tipo de identificador utilizado <strong>(relatedIdentifierType)</strong> en el campo de datacite.relatedIdentifier <strong>(dc.relation)</strong> el cual tiene asociado un vocabulario controlado (DOI, HANDLE, URI, etc..) se puede realizar por dos vías:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Reutilizando el atributo <strong>idioma</strong> para almacenar el valor autorizado del tipo de identificador que se muestra en DSPACE en el momento que se edita un ítem.</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/doi1.jpg"><img alt="_images/doi1.jpg" src="_images/doi1.jpg" style="width: 956.0px; height: 100.0px;" /></a>
+<blockquote>
+<div><ul class="simple">
+<li>Utilizando como <strong>prefijo</strong> asociado al contenido del campo el valor autorizado del tipo de identificador (Vocabulario controlado) seguido del signo “:”. Ejemplo para describir un recurso relacionado mediante un DOI, se escribe:</li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/doi2.jpg"><img alt="_images/doi2.jpg" src="_images/doi2.jpg" style="width: 971.2px; height: 112.8px;" /></a>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Para gestionar las referencias bibliográficas (bibliografía),</strong> utilice  los campos dc.relation.references y/o dcterms.references</li>
+</ul>
+</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="12%" />
+<col width="8%" />
+<col width="59%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Vocabulario controlado OpenAire/RedCol</th>
+<th class="head">Campo Elemento DSPACE</th>
+<th class="head">Calificadores</th>
+<th class="head">Nota de alcance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>RedCol</td>
+<td>dc.relation dcterms</td>
+<td>references</td>
+<td>Cita bibliográfica. Se aplica equivalencia semántica para los campos dc.relation.references y dcterms.references</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Para especificar la relación del recurso de información respecto al repositorio y la institución (utilizado por LaReferencia),</strong> utilice el campo dc.identifier con los siguientes calificadores</li>
+</ul>
+</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="17%" />
+<col width="11%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Vocabulario controlado OpenAire/RedCol</th>
+<th class="head">Campo Elemento DSPACE</th>
+<th class="head">Calificadores</th>
+<th class="head">Nota de alcance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>instname</td>
+<td>dc.identifier</td>
+<td>instname</td>
+<td>Utilice el prefijo: instname:
+- instname:Universidad Nacional de Colombia</td>
+</tr>
+<tr class="row-odd"><td>reponame</td>
+<td>dc.identifier</td>
+<td>reponame</td>
+<td>Utilice el prefijo: reponame:
+- reponame:BDigital</td>
+</tr>
+<tr class="row-even"><td>repourl</td>
+<td>dc.identifier</td>
+<td>repourl</td>
+<td>Utilice el prefijo: repourl:
+- repourl: <a class="reference external" href="http://www.bdigital.unal.edu.co/">http://www.bdigital.unal.edu.co/</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="recomendaciones-de-migracion-de-otras-directrices-de-metadatos-bdcol-snaac-la-referencia-openaire-2-openaire-3">
+<h2>5.7.15. Recomendaciones de migración de otras directrices de metadatos (BDCOL, SNAAC, LA REFERENCIA, OPENAIRE 2, OPENAIRE 3)<a class="headerlink" href="#recomendaciones-de-migracion-de-otras-directrices-de-metadatos-bdcol-snaac-la-referencia-openaire-2-openaire-3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Se recomienda específicamente crear los nuevos atributos/especificadores del campo de identificador alternativo según la codificación propuesta.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright MinCiencias 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
